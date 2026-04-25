@@ -1,0 +1,94 @@
+# =========================
+# BUILD / OUTPUT
+# =========================
+bin/
+obj/
+out/
+publish/
+
+# =========================
+# USER / IDE FILES
+# =========================
+*.user
+*.rsuser
+*.suo
+*.userprefs
+
+# =========================
+# VS Code
+# =========================
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# =========================
+# LOGS
+# =========================
+*.log
+
+# =========================
+# TEMP FILES
+# =========================
+*.tmp
+*.temp
+*.cache
+*.pid
+
+# =========================
+# OS FILES (Linux/Windows)
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# DOTNET
+# =========================
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# =========================
+# NUGET
+# =========================
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# =========================
+# TEST RESULTS
+# =========================
+TestResults/
+coverage/
+
+# =========================
+# ENV / SECRETS
+# =========================
+.env
+.env.*
+secrets.json
+
+# =========================
+# DATABASE / LOCAL FILES
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# PUBLISH PROFILES
+# =========================
+Properties/PublishProfiles/
+
+# =========================
+# RIDER / OUTROS IDEs
+# =========================
+.idea/
+
+# =========================
+# BACKUPS
+# =========================
+*.bak
+*.old
