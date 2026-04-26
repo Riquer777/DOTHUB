@@ -148,6 +148,7 @@ class Program
             Console.WriteLine("|[" + (Menu_s_poisi == 4 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Back to menu");
             break;
             case 2:
+            Console.SetCursorPosition(0,0);
             Console.WriteLine("DOTHUB\n|Options for the dotnet console:\n|[" + (Menu_s_poisi == 0 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"dotnet new console");
             Console.WriteLine("|[" + (Menu_s_poisi == 1 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Back");
             break;
