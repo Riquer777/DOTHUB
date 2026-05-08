@@ -1,0 +1,1 @@
+Improved .NET interface with navigation: ↑/W up, ↓/S down, Enter to confirm. Features: run code, open a .NET terminal, and compile for Windows/Linux (with or without self-contained). Just add DOTHUB to your PATH and run it in the terminal.
