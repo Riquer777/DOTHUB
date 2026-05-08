@@ -130,27 +130,34 @@ class Program
     }
     static void Menu_userr()
     {
+    string buffer_texto = "";
     switch (Menu_secao)
         {
             case 0:
-            Console.SetCursorPosition(0,0);
-            Console.WriteLine("DOTHUB\n|Main:\n|[" + (Menu_s_poisi == 0 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Run");
-            Console.WriteLine("|[" + (Menu_s_poisi == 1 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Compilation options");
-            Console.WriteLine("|[" + (Menu_s_poisi == 2 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Options for the dotnet console");
-            Console.WriteLine("|[" + (Menu_s_poisi == 3 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Exit");
+            buffer_texto = "";
+            buffer_texto += "DOTHUB\n|Main:\n|[" + (Menu_s_poisi == 0 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Run";
+            buffer_texto += "\n|[" + (Menu_s_poisi == 1 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Compilation options";
+            buffer_texto += "\n|[" + (Menu_s_poisi == 2 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Options for the dotnet console";
+            buffer_texto += "\n|[" + (Menu_s_poisi == 3 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Exit";
+            Console.Clear();
+            Console.WriteLine(buffer_texto);
             break;
             case 1:
-            Console.SetCursorPosition(0,0);
-            Console.WriteLine("DOTHUB\n|Compilation options:\n|[" + (Menu_s_poisi == 0 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"compile Linux");
-            Console.WriteLine("|[" + (Menu_s_poisi == 1 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"compile Linux(self-contained)");
-            Console.WriteLine("|[" + (Menu_s_poisi == 2 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"compile Windows");
-            Console.WriteLine("|[" + (Menu_s_poisi == 3 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"compile Windows(self-contained)");
-            Console.WriteLine("|[" + (Menu_s_poisi == 4 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Back to menu");
+            buffer_texto = "";
+            buffer_texto += "DOTHUB\n|Compilation options:\n|[" + (Menu_s_poisi == 0 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"compile Linux";
+            buffer_texto += "\n|[" + (Menu_s_poisi == 1 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"compile Linux(self-contained)";
+            buffer_texto += "\n|[" + (Menu_s_poisi == 2 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"compile Windows";
+            buffer_texto += "\n|[" + (Menu_s_poisi == 3 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"compile Windows(self-contained)";
+            buffer_texto += "\n|[" + (Menu_s_poisi == 4 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Back to menu";
+            Console.Clear();
+            Console.WriteLine(buffer_texto);
             break;
             case 2:
-            Console.SetCursorPosition(0,0);
-            Console.WriteLine("DOTHUB\n|Options for the dotnet console:\n|[" + (Menu_s_poisi == 0 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"dotnet new console");
-            Console.WriteLine("|[" + (Menu_s_poisi == 1 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Back");
+            buffer_texto = "";
+            buffer_texto += "DOTHUB\n|Options for the dotnet console:\n|[" + (Menu_s_poisi == 0 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"dotnet new console";
+            buffer_texto += "\n|[" + (Menu_s_poisi == 1 ? $"{Cor.verde}*{Cor.reset}" : $"{Cor.amarelo}#{Cor.reset}") + "]"+"Back";
+            Console.Clear();
+            Console.WriteLine(buffer_texto);
             break;
         }
     }
@@ -257,6 +264,7 @@ class Program
     }
     static void Main()
     {
+        
         Console.CursorVisible = false;
         Console.WriteLine("Linux user:" + Linux);
         Console.WriteLine("You need to have .NET installed in the PATH for Dothub to work correctly.(enter to continue)");
